@@ -15,11 +15,23 @@ export default function Login() {
   const [error, setError] = useState("");
   const isInvalid = password === "" || emailAddress === "";
 
-  const handleLogin = () => {};
+  const handleLogin = async (event) => {
+    event.preventDefault();
+
+    try {
+      await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
+      history.push(ROUTES.DASHBOARD);
+    } catch (error) {
+      setEmailAddress("");
+      setPassword("");
+      setError(error.message);
+    }
+  };
 
   useEffect(() => {
     document.title = "Login - Instagram";
   });
+
   return (
     <div className="container flex mx-auto max-w-screen-md items-center h-screen">
       <div className="flex w-3/5">
