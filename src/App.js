@@ -16,7 +16,7 @@ function App() {
 
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
-          <Route element={NotFound} />
+          <Route element={<NotFound />} />
         </Routes>
       </Suspense>
     </Router>
