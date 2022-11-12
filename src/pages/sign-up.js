@@ -48,7 +48,7 @@ export default function SignUp() {
             dateCreated: Date.now(),
           });
 
-        history.push(ROUTES.DASHBOARD);
+        history(ROUTES.DASHBOARD);
       } catch (error) {
         setFullName("");
         setEmailAddress("");
