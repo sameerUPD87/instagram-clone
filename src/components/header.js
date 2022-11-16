@@ -30,7 +30,7 @@ export default function Header() {
           <div className="text-gray-700 text-center flex items-center align-items">
             {loggedInUser ? (
               <>
-                <Link to={ROUTES.DASHBOARD} aria-label="Dashboard">
+                <Link to={ROUTES.INSTA_TREND} aria-label="Instatrend">
                   <svg
                     className="w-10 mr-6 text-black-light cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg"
