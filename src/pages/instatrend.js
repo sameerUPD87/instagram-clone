@@ -1,4 +1,4 @@
-import classes from "../styles/tailwind.css";
+import classes from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import DoneIcon from "@mui/icons-material/Done";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
